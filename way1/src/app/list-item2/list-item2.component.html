@@ -1,0 +1,12 @@
+<h1 class="display-4">Users</h1>
+
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let user of listItems2$">
+    <a class="card-title" routerLink="/details/{{user.id}}">{{ user.name }}</a>
+
+    <ul class="card-body">
+      <li>{{ user.email }}</li>
+      <li><a href="http://{{ user.website }}">{{ user.website }}</a></li>
+    </ul>
+  </li>
+</ul>
